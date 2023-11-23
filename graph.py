@@ -1,6 +1,5 @@
 import heapq
 import networkx as nx
-import matplotlib.pyplot as plt
 
 class Graph:
     # Classe que representa um grafo.
