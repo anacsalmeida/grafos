@@ -3,15 +3,15 @@ import networkx as nx
 import matplotlib.pyplot as plt
 
 class Graph:
-    # Classe que representa um grafo."""
+    # Classe que representa um grafo.
 
     def __init__(self):
-        # Construtor da classe. Inicializa a lista de adjacência do grafo."""
+        # Construtor da classe. Inicializa a lista de adjacência do grafo.
         self.adjacency_list = {}
 
     @property
     def num_nodes(self):
-        # Obtém o número de nós do grafo."""
+        # Obtém o número de nós do grafo.
         return len(self.adjacency_list)
 
     @property
