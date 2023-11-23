@@ -46,9 +46,9 @@ def main():
         print("\nMenu:")
         print("1. Verificar se um grafo é completo (Exemplo Completo)")
         print("2. Verificar se um grafo é completo (Exemplo Incompleto)")
-        print("3. Verificar se dois grafos são isomórficos (Exemplos G e H)")
-        print("4. Executar DFS em um grafo e visualizar (Exemplo P)")
-        print("5. Computar a árvore geradora mínima (MST) usando o algoritmo de Prim (Exemplo P)")
+        print("3. Verificar se dois grafos são isomórficos")
+        print("4. Executar DFS em um grafo")
+        print("5. Árvore geradora mínima (MST) usando o algoritmo de Prim")
         print("6. Sair")
 
         choice = input("Escolha uma opção (1-6): ")
@@ -70,12 +70,10 @@ def main():
             graph = create_example_graph('complex')  # Criar o grafo P
             start_vertex = input("Digite o vértice de início para o DFS: ")
             dfs_edges = graph.dfs(start_vertex)
-            graph.visualize_generic_graph(graph, edges=dfs_edges)
         elif choice == '5':
             graph = create_example_graph('complex')  # Criar o grafo P
             start_vertex = input("Digite o vértice de início para o algoritmo de Prim: ")
             mst_edges = graph.prim(start_vertex)
-            graph.visualize_generic_graph(graph, edges=mst_edges)
         elif choice == '6':
             print("Saindo do programa.")
             break
